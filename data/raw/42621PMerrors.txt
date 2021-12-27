@@ -1,0 +1,393 @@
+Last login: Mon Apr 26 14:23:46 on ttys000
+You have mail.
+crontab 
+The default interactive shell is now zsh.
+To update your account to use zsh, please run `chsh -s /bin/zsh`.
+For more details, please visit https://support.apple.com/kb/HT208050.
+(base) charless-mbp-2:~ charlesmarshall$ crontab -l
+# Testing Cronjob
+# * * * * * /Users/charlesmarshall/anaconda3/bin/python /Users/charlesmarshall/Desktop/TransMinor/CTA_Project/DataScrapingScript.py
+
+# Cronjob for AM Purple Line Rush 4/23/21
+# * 5-12 * * 1-5 /Users/charlesmarshall/anaconda3/bin/python /Users/charlesmarshall/Desktop/TransMinor/CTA_Project/DataScrapingScript.py
+
+# Cronjob for PM Purple Line Rush 4/23/21
+* 14-21 * * 1-5 /Users/charlesmarshall/anaconda3/bin/python /Users/charlesmarshall/Desktop/TransMinor/CTA_Project/DataScrapingScript.py
+
+(base) charless-mbp-2:~ charlesmarshall$ mail
+Mail version 8.1 6/6/93.  Type ? for help.
+"/var/mail/charlesmarshall": 9 messages 9 unread
+>U  1 charlesmarshall@char  Mon Apr 26 14:10  36/1870  "Cron <charlesmarshall"
+ U  2 charlesmarshall@char  Mon Apr 26 14:12  36/1867  "Cron <charlesmarshall"
+ U  3 charlesmarshall@char  Mon Apr 26 14:14  72/3949  "Cron <charlesmarshall"
+ U  4 charlesmarshall@char  Mon Apr 26 14:14  54/2910  "Cron <charlesmarshall"
+ U  5 charlesmarshall@char  Mon Apr 26 14:15  54/2912  "Cron <charlesmarshall"
+ U  6 charlesmarshall@char  Mon Apr 26 14:16  36/1867  "Cron <charlesmarshall"
+ U  7 charlesmarshall@char  Mon Apr 26 14:16  54/2917  "Cron <charlesmarshall"
+ U  8 charlesmarshall@char  Mon Apr 26 14:17  54/2918  "Cron <charlesmarshall"
+ U  9 charlesmarshall@char  Mon Apr 26 14:18  54/2907  "Cron <charlesmarshall"
+? ?
+    Mail   Commands
+t <message list>		type messages
+n				goto and type next message
+e <message list>		edit messages
+f <message list>		give head lines of messages
+d <message list>		delete messages
+s <message list> file		append messages to file
+u <message list>		undelete messages
+R <message list>		reply to message senders
+r <message list>		reply to message senders and all recipients
+pre <message list>		make messages go back to /var/mail
+m <user list>			mail to specific users
+q				quit, saving unresolved messages in mbox
+x				quit, do not remove system mailbox
+h				print out active message headers
+!				shell escape
+cd [directory]			chdir to directory or home if none given
+
+A <message list> consists of integers, ranges of same, or user names separated
+by spaces.  If omitted, Mail uses the last message typed.
+
+A <user list> consists of user names or aliases separated by spaces.
+Aliases are defined in .mailrc in your home directory.
+? n
+Message 2:
+From charlesmarshall@charless-mbp-2.lan  Mon Apr 26 14:12:01 2021
+X-Original-To: charlesmarshall
+Delivered-To: charlesmarshall@charless-mbp-2.lan
+From: charlesmarshall@charless-mbp-2.lan (Cron Daemon)
+From: charlesmarshall@charless-mbp-2.lan (Cron Daemon)
+To: charlesmarshall@charless-mbp-2.lan
+Subject: Cron <charlesmarshall@charless-mbp-2> /Users/charlesmarshall/anaconda3/bin/python /Users/charlesmarshall/Desktop/TransMinor/CTA_Project/DataScrapingScript.py
+X-Cron-Env: <SHELL=/bin/sh>
+X-Cron-Env: <PATH=/usr/bin:/bin>
+X-Cron-Env: <LOGNAME=charlesmarshall>
+X-Cron-Env: <USER=charlesmarshall>
+Date: Mon, 26 Apr 2021 14:12:01 -0500 (CDT)
+
+--- Logging error ---
+Traceback (most recent call last):
+  File "/Users/charlesmarshall/anaconda3/lib/python3.7/logging/__init__.py", line 1025, in emit
+    msg = self.format(record)
+  File "/Users/charlesmarshall/anaconda3/lib/python3.7/logging/__init__.py", line 869, in format
+    return fmt.format(record)
+  File "/Users/charlesmarshall/anaconda3/lib/python3.7/logging/__init__.py", line 608, in format
+    record.message = record.getMessage()
+  File "/Users/charlesmarshall/anaconda3/lib/python3.7/logging/__init__.py", line 369, in getMessage
+    msg = msg % self.args
+TypeError: not all arguments converted during string formatting
+Call stack:
+  File "/Users/charlesmarshall/Desktop/TransMinor/CTA_Project/DataScrapingScript.py", line 86, in <module>
+    purple_data()
+  File "/Users/charlesmarshall/Desktop/TransMinor/CTA_Project/DataScrapingScript.py", line 74, in purple_data
+    logger.info(train.rn.string,train.nextStaNm.string,train.trDr.string,train.arrT.string)
+Message: '518'
+Arguments: ('Davis', '5', '20210426 14:12:15')
+
+? n                                   
+Message 3:
+From charlesmarshall@charless-mbp-2.lan  Mon Apr 26 14:14:01 2021
+X-Original-To: charlesmarshall
+Delivered-To: charlesmarshall@charless-mbp-2.lan
+From: charlesmarshall@charless-mbp-2.lan (Cron Daemon)
+To: charlesmarshall@charless-mbp-2.lan
+Subject: Cron <charlesmarshall@charless-mbp-2> /Users/charlesmarshall/anaconda3/bin/python /Users/charlesmarshall/Desktop/TransMinor/CTA_Project/DataScrapingScript.py
+X-Cron-Env: <SHELL=/bin/sh>
+X-Cron-Env: <PATH=/usr/bin:/bin>
+X-Cron-Env: <LOGNAME=charlesmarshall>
+X-Cron-Env: <USER=charlesmarshall>
+Date: Mon, 26 Apr 2021 14:08:01 -0500 (CDT)
+
+--- Logging error ---
+Traceback (most recent call last):
+  File "/Users/charlesmarshall/anaconda3/lib/python3.7/logging/__init__.py", line 1025, in emit
+    msg = self.format(record)
+  File "/Users/charlesmarshall/anaconda3/lib/python3.7/logging/__init__.py", line 869, in format
+    return fmt.format(record)
+  File "/Users/charlesmarshall/anaconda3/lib/python3.7/logging/__init__.py", line 608, in format
+    record.message = record.getMessage()
+  File "/Users/charlesmarshall/anaconda3/lib/python3.7/logging/__init__.py", line 369, in getMessage
+    msg = msg % self.args
+TypeError: not all arguments converted during string formatting
+Call stack:
+  File "/Users/charlesmarshall/Desktop/TransMinor/CTA_Project/DataScrapingScript.py", line 86, in <module>
+    purple_data()
+  File "/Users/charlesmarshall/Desktop/TransMinor/CTA_Project/DataScrapingScript.py", line 74, in purple_data
+    logger.info(train.rn.string,train.nextStaNm.string,train.trDr.string,train.arrT.string)
+Message: '514'
+Arguments: ('Linden', '1', '20210426 14:08:33')
+--- Logging error ---
+Traceback (most recent call last):
+  File "/Users/charlesmarshall/anaconda3/lib/python3.7/logging/__init__.py", line 1025, in emit
+    msg = self.format(record)
+  File "/Users/charlesmarshall/anaconda3/lib/python3.7/logging/__init__.py", line 869, in format
+    return fmt.format(record)
+  File "/Users/charlesmarshall/anaconda3/lib/python3.7/logging/__init__.py", line 608, in format
+    record.message = record.getMessage()
+  File "/Users/charlesmarshall/anaconda3/lib/python3.7/logging/__init__.py", line 369, in getMessage
+    msg = msg % self.args
+TypeError: not all arguments converted during string formatting
+Call stack:
+  File "/Users/charlesmarshall/Desktop/TransMinor/CTA_Project/DataScrapingScript.py", line 86, in <module>
+    purple_data()
+  File "/Users/charlesmarshall/Desktop/TransMinor/CTA_Project/DataScrapingScript.py", line 74, in purple_data
+    logger.info(train.rn.string,train.nextStaNm.string,train.trDr.string,train.arrT.string)
+Message: '518'
+Arguments: ('Central', '5', '20210426 14:08:06')
+--- Logging error ---
+Traceback (most recent call last):
+  File "/Users/charlesmarshall/anaconda3/lib/python3.7/logging/__init__.py", line 1025, in emit
+    msg = self.format(record)
+  File "/Users/charlesmarshall/anaconda3/lib/python3.7/logging/__init__.py", line 869, in format
+    return fmt.format(record)
+  File "/Users/charlesmarshall/anaconda3/lib/python3.7/logging/__init__.py", line 608, in format
+    record.message = record.getMessage()
+  File "/Users/charlesmarshall/anaconda3/lib/python3.7/logging/__init__.py", line 369, in getMessage
+    msg = msg % self.args
+TypeError: not all arguments converted during string formatting
+Call stack:
+  File "/Users/charlesmarshall/Desktop/TransMinor/CTA_Project/DataScrapingScript.py", line 86, in <module>
+    purple_data()
+  File "/Users/charlesmarshall/Desktop/TransMinor/CTA_Project/DataScrapingScript.py", line 74, in purple_data
+    logger.info(train.rn.string,train.nextStaNm.string,train.trDr.string,train.arrT.string)
+Message: '519'
+Arguments: ('Main', '1', '20210426 14:07:59')
+
+? n                               
+Message 4:
+From charlesmarshall@charless-mbp-2.lan  Mon Apr 26 14:14:01 2021
+X-Original-To: charlesmarshall
+Delivered-To: charlesmarshall@charless-mbp-2.lan
+From: charlesmarshall@charless-mbp-2.lan (Cron Daemon)
+To: charlesmarshall@charless-mbp-2.lan
+Subject: Cron <charlesmarshall@charless-mbp-2> /Users/charlesmarshall/anaconda3/bin/python /Users/charlesmarshall/Desktop/TransMinor/CTA_Project/DataScrapingScript.py
+X-Cron-Env: <SHELL=/bin/sh>
+X-Cron-Env: <PATH=/usr/bin:/bin>
+X-Cron-Env: <LOGNAME=charlesmarshall>
+X-Cron-Env: <USER=charlesmarshall>
+Date: Mon, 26 Apr 2021 14:14:01 -0500 (CDT)
+
+--- Logging error ---
+Traceback (most recent call last):
+  File "/Users/charlesmarshall/anaconda3/lib/python3.7/logging/__init__.py", line 1025, in emit
+    msg = self.format(record)
+  File "/Users/charlesmarshall/anaconda3/lib/python3.7/logging/__init__.py", line 869, in format
+    return fmt.format(record)
+  File "/Users/charlesmarshall/anaconda3/lib/python3.7/logging/__init__.py", line 608, in format
+    record.message = record.getMessage()
+  File "/Users/charlesmarshall/anaconda3/lib/python3.7/logging/__init__.py", line 369, in getMessage
+    msg = msg % self.args
+TypeError: not all arguments converted during string formatting
+Call stack:
+  File "/Users/charlesmarshall/Desktop/TransMinor/CTA_Project/DataScrapingScript.py", line 86, in <module>
+    purple_data()
+  File "/Users/charlesmarshall/Desktop/TransMinor/CTA_Project/DataScrapingScript.py", line 74, in purple_data
+    logger.info(train.rn.string,train.nextStaNm.string,train.trDr.string,train.arrT.string)
+Message: '518'
+Arguments: ('Dempster', '5', '20210426 14:14:28')
+--- Logging error ---
+Traceback (most recent call last):
+  File "/Users/charlesmarshall/anaconda3/lib/python3.7/logging/__init__.py", line 1025, in emit
+    msg = self.format(record)
+  File "/Users/charlesmarshall/anaconda3/lib/python3.7/logging/__init__.py", line 869, in format
+    return fmt.format(record)
+  File "/Users/charlesmarshall/anaconda3/lib/python3.7/logging/__init__.py", line 608, in format
+    record.message = record.getMessage()
+  File "/Users/charlesmarshall/anaconda3/lib/python3.7/logging/__init__.py", line 369, in getMessage
+    msg = msg % self.args
+TypeError: not all arguments converted during string formatting
+Call stack:
+  File "/Users/charlesmarshall/Desktop/TransMinor/CTA_Project/DataScrapingScript.py", line 86, in <module>
+    purple_data()
+  File "/Users/charlesmarshall/Desktop/TransMinor/CTA_Project/DataScrapingScript.py", line 74, in purple_data
+    logger.info(train.rn.string,train.nextStaNm.string,train.trDr.string,train.arrT.string)
+Message: '519'
+Arguments: ('Noyes', '1', '20210426 14:13:36')
+
+? n
+Message 5:
+From charlesmarshall@charless-mbp-2.lan  Mon Apr 26 14:15:00 2021
+X-Original-To: charlesmarshall
+Delivered-To: charlesmarshall@charless-mbp-2.lan
+From: charlesmarshall@charless-mbp-2.lan (Cron Daemon)
+To: charlesmarshall@charless-mbp-2.lan
+Subject: Cron <charlesmarshall@charless-mbp-2> /Users/charlesmarshall/anaconda3/bin/python /Users/charlesmarshall/Desktop/TransMinor/CTA_Project/DataScrapingScript.py
+X-Cron-Env: <SHELL=/bin/sh>
+X-Cron-Env: <PATH=/usr/bin:/bin>
+X-Cron-Env: <LOGNAME=charlesmarshall>
+X-Cron-Env: <USER=charlesmarshall>
+Date: Mon, 26 Apr 2021 14:15:00 -0500 (CDT)
+
+--- Logging error ---
+Traceback (most recent call last):
+  File "/Users/charlesmarshall/anaconda3/lib/python3.7/logging/__init__.py", line 1025, in emit
+    msg = self.format(record)
+  File "/Users/charlesmarshall/anaconda3/lib/python3.7/logging/__init__.py", line 869, in format
+    return fmt.format(record)
+  File "/Users/charlesmarshall/anaconda3/lib/python3.7/logging/__init__.py", line 608, in format
+    record.message = record.getMessage()
+  File "/Users/charlesmarshall/anaconda3/lib/python3.7/logging/__init__.py", line 369, in getMessage
+    msg = msg % self.args
+TypeError: not all arguments converted during string formatting
+Call stack:
+  File "/Users/charlesmarshall/Desktop/TransMinor/CTA_Project/DataScrapingScript.py", line 86, in <module>
+    purple_data()
+  File "/Users/charlesmarshall/Desktop/TransMinor/CTA_Project/DataScrapingScript.py", line 74, in purple_data
+    logger.info(train.rn.string,train.nextStaNm.string,train.trDr.string,train.arrT.string)
+Message: '518'
+Arguments: ('Dempster', '5', '20210426 14:14:28')
+--- Logging error ---
+Traceback (most recent call last):
+  File "/Users/charlesmarshall/anaconda3/lib/python3.7/logging/__init__.py", line 1025, in emit
+    msg = self.format(record)
+  File "/Users/charlesmarshall/anaconda3/lib/python3.7/logging/__init__.py", line 869, in format
+    return fmt.format(record)
+  File "/Users/charlesmarshall/anaconda3/lib/python3.7/logging/__init__.py", line 608, in format
+    record.message = record.getMessage()
+  File "/Users/charlesmarshall/anaconda3/lib/python3.7/logging/__init__.py", line 369, in getMessage
+    msg = msg % self.args
+TypeError: not all arguments converted during string formatting
+Call stack:
+  File "/Users/charlesmarshall/Desktop/TransMinor/CTA_Project/DataScrapingScript.py", line 86, in <module>
+    purple_data()
+  File "/Users/charlesmarshall/Desktop/TransMinor/CTA_Project/DataScrapingScript.py", line 74, in purple_data
+    logger.info(train.rn.string,train.nextStaNm.string,train.trDr.string,train.arrT.string)
+Message: '519'
+Arguments: ('Central', '1', '20210426 14:15:33')
+
+? n                   
+Message 6:
+From charlesmarshall@charless-mbp-2.lan  Mon Apr 26 14:16:01 2021
+X-Original-To: charlesmarshall
+Delivered-To: charlesmarshall@charless-mbp-2.lan
+From: charlesmarshall@charless-mbp-2.lan (Cron Daemon)
+To: charlesmarshall@charless-mbp-2.lan
+Subject: Cron <charlesmarshall@charless-mbp-2> /Users/charlesmarshall/anaconda3/bin/python /Users/charlesmarshall/Desktop/TransMinor/CTA_Project/DataScrapingScript.py
+X-Cron-Env: <SHELL=/bin/sh>
+X-Cron-Env: <PATH=/usr/bin:/bin>
+X-Cron-Env: <LOGNAME=charlesmarshall>
+X-Cron-Env: <USER=charlesmarshall>
+Date: Mon, 26 Apr 2021 14:11:01 -0500 (CDT)
+
+--- Logging error ---
+Traceback (most recent call last):
+  File "/Users/charlesmarshall/anaconda3/lib/python3.7/logging/__init__.py", line 1025, in emit
+    msg = self.format(record)
+  File "/Users/charlesmarshall/anaconda3/lib/python3.7/logging/__init__.py", line 869, in format
+    return fmt.format(record)
+  File "/Users/charlesmarshall/anaconda3/lib/python3.7/logging/__init__.py", line 608, in format
+    record.message = record.getMessage()
+  File "/Users/charlesmarshall/anaconda3/lib/python3.7/logging/__init__.py", line 369, in getMessage
+    msg = msg % self.args
+TypeError: not all arguments converted during string formatting
+Call stack:
+  File "/Users/charlesmarshall/Desktop/TransMinor/CTA_Project/DataScrapingScript.py", line 86, in <module>
+    purple_data()
+  File "/Users/charlesmarshall/Desktop/TransMinor/CTA_Project/DataScrapingScript.py", line 74, in purple_data
+    logger.info(train.rn.string,train.nextStaNm.string,train.trDr.string,train.arrT.string)
+Message: '518'
+Arguments: ('Davis', '5', '20210426 14:11:15')
+
+? n                       
+Message 7:
+From charlesmarshall@charless-mbp-2.lan  Mon Apr 26 14:16:01 2021
+X-Original-To: charlesmarshall
+Delivered-To: charlesmarshall@charless-mbp-2.lan
+From: charlesmarshall@charless-mbp-2.lan (Cron Daemon)
+To: charlesmarshall@charless-mbp-2.lan
+Subject: Cron <charlesmarshall@charless-mbp-2> /Users/charlesmarshall/anaconda3/bin/python /Users/charlesmarshall/Desktop/TransMinor/CTA_Project/DataScrapingScript.py
+X-Cron-Env: <SHELL=/bin/sh>
+X-Cron-Env: <PATH=/usr/bin:/bin>
+X-Cron-Env: <LOGNAME=charlesmarshall>
+X-Cron-Env: <USER=charlesmarshall>
+Date: Mon, 26 Apr 2021 14:16:01 -0500 (CDT)
+
+--- Logging error ---
+Traceback (most recent call last):
+  File "/Users/charlesmarshall/anaconda3/lib/python3.7/logging/__init__.py", line 1025, in emit
+    msg = self.format(record)
+  File "/Users/charlesmarshall/anaconda3/lib/python3.7/logging/__init__.py", line 869, in format
+    return fmt.format(record)
+  File "/Users/charlesmarshall/anaconda3/lib/python3.7/logging/__init__.py", line 608, in format
+    record.message = record.getMessage()
+  File "/Users/charlesmarshall/anaconda3/lib/python3.7/logging/__init__.py", line 369, in getMessage
+    msg = msg % self.args
+TypeError: not all arguments converted during string formatting
+Call stack:
+  File "/Users/charlesmarshall/Desktop/TransMinor/CTA_Project/DataScrapingScript.py", line 86, in <module>
+    purple_data()
+  File "/Users/charlesmarshall/Desktop/TransMinor/CTA_Project/DataScrapingScript.py", line 74, in purple_data
+    logger.info(train.rn.string,train.nextStaNm.string,train.trDr.string,train.arrT.string)
+Message: '1000'
+Arguments: ('South Boulevard', '1', '20210426 14:16:39')
+--- Logging error ---
+Traceback (most recent call last):
+  File "/Users/charlesmarshall/anaconda3/lib/python3.7/logging/__init__.py", line 1025, in emit
+    msg = self.format(record)
+  File "/Users/charlesmarshall/anaconda3/lib/python3.7/logging/__init__.py", line 869, in format
+    return fmt.format(record)
+  File "/Users/charlesmarshall/anaconda3/lib/python3.7/logging/__init__.py", line 608, in format
+    record.message = record.getMessage()
+  File "/Users/charlesmarshall/anaconda3/lib/python3.7/logging/__init__.py", line 369, in getMessage
+    msg = msg % self.args
+TypeError: not all arguments converted during string formatting
+Call stack:
+  File "/Users/charlesmarshall/Desktop/TransMinor/CTA_Project/DataScrapingScript.py", line 86, in <module>
+    purple_data()
+  File "/Users/charlesmarshall/Desktop/TransMinor/CTA_Project/DataScrapingScript.py", line 74, in purple_data
+    logger.info(train.rn.string,train.nextStaNm.string,train.trDr.string,train.arrT.string)
+Message: '518'
+Arguments: ('Main', '5', '20210426 14:16:01')
+
+? n           
+Message 8:
+From charlesmarshall@charless-mbp-2.lan  Mon Apr 26 14:17:02 2021
+X-Original-To: charlesmarshall
+Delivered-To: charlesmarshall@charless-mbp-2.lan
+From: charlesmarshall@charless-mbp-2.lan (Cron Daemon)
+To: charlesmarshall@charless-mbp-2.lan
+Subject: Cron <charlesmarshall@charless-mbp-2> /Users/charlesmarshall/anaconda3/bin/python /Users/charlesmarshall/Desktop/TransMinor/CTA_Project/DataScrapingScript.py
+X-Cron-Env: <SHELL=/bin/sh>
+X-Cron-Env: <PATH=/usr/bin:/bin>
+X-Cron-Env: <LOGNAME=charlesmarshall>
+X-Cron-Env: <USER=charlesmarshall>
+Date: Mon, 26 Apr 2021 14:17:01 -0500 (CDT)
+
+--- Logging error ---
+Traceback (most recent call last):
+  File "/Users/charlesmarshall/anaconda3/lib/python3.7/logging/__init__.py", line 1025, in emit
+    msg = self.format(record)
+  File "/Users/charlesmarshall/anaconda3/lib/python3.7/logging/__init__.py", line 869, in format
+    return fmt.format(record)
+  File "/Users/charlesmarshall/anaconda3/lib/python3.7/logging/__init__.py", line 608, in format
+    record.message = record.getMessage()
+  File "/Users/charlesmarshall/anaconda3/lib/python3.7/logging/__init__.py", line 369, in getMessage
+    msg = msg % self.args
+TypeError: not all arguments converted during string formatting
+Call stack:
+  File "/Users/charlesmarshall/Desktop/TransMinor/CTA_Project/DataScrapingScript.py", line 86, in <module>
+    purple_data()
+  File "/Users/charlesmarshall/Desktop/TransMinor/CTA_Project/DataScrapingScript.py", line 74, in purple_data
+    logger.info(train.rn.string,train.nextStaNm.string,train.trDr.string,train.arrT.string)
+Message: '513'
+Arguments: ('South Boulevard', '5', '20210426 14:17:14')
+--- Logging error ---
+Traceback (most recent call last):
+  File "/Users/charlesmarshall/anaconda3/lib/python3.7/logging/__init__.py", lin  File "/Users/charlesmarshall/anaconda3/lib/python3.7/logging/__init__.py", lin
+Traceback (most recent call last):
+  File "/Users/charlesmarshall/anaconda3/lib/python3.7/logging/__init__.py", lin
+e 1025, in emit
+    msg = self.format(record)
+  File "/Users/charlesmarshall/anaconda3/lib/python3.7/logging/__init__.py", line 869, in format
+    return fmt.format(record)
+  File "/Users/charlesmarshall/anaconda3/lib/python3.7/logging/__init__.py", line 608, in format
+    record.message = record.getMessage()
+  File "/Users/charlesmarshall/anaconda3/lib/python3.7/logging/__init__.py", line 369, in getMessage
+    msg = msg % self.args
+TypeError: not all arguments converted during string formatting
+Call stack:
+  File "/Users/charlesmarshall/Desktop/TransMinor/CTA_Project/DataScrapingScript.py", line 86, in <module>
+    purple_data()
+  File "/Users/charlesmarshall/Desktop/TransMinor/CTA_Project/DataScrapingScript.py", line 74, in purple_data
+    logger.info(train.rn.string,train.nextStaNm.string,train.trDr.string,train.arrT.string)
+Message: '519'

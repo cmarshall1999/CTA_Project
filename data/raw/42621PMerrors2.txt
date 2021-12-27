@@ -1,0 +1,117 @@
+Last login: Mon Apr 26 14:25:03 on ttys000
+You have mail.
+crontab 
+The default interactive shell is now zsh.
+To update your account to use zsh, please run `chsh -s /bin/zsh`.
+For more details, please visit https://support.apple.com/kb/HT208050.
+(base) charless-mbp-2:~ charlesmarshall$ crontab -l
+# Testing Cronjob
+# * * * * * /Users/charlesmarshall/anaconda3/bin/python /Users/charlesmarshall/Desktop/TransMinor/CTA_Project/DataScrapingScript.py
+
+# Cronjob for AM Purple Line Rush 4/23/21
+# * 5-12 * * 1-5 /Users/charlesmarshall/anaconda3/bin/python /Users/charlesmarshall/Desktop/TransMinor/CTA_Project/DataScrapingScript.py
+
+# Cronjob for PM Purple Line Rush 4/23/21
+* 14-21 * * 1-5 /Users/charlesmarshall/anaconda3/bin/python /Users/charlesmarshall/Desktop/TransMinor/CTA_Project/DataScrapingScript.py
+
+(base) charless-mbp-2:~ charlesmarshall$ crontab -e
+crontab: installing new crontab
+(base) charless-mbp-2:~ charlesmarshall$ crontab -l
+# Testing Cronjob
+# * * * * * /Users/charlesmarshall/anaconda3/bin/python /Users/charlesmarshall/Desktop/TransMinor/CTA_Project/DataScrapingScript.py
+
+# Cronjob for AM Purple Line Rush 4/23/21
+# * 5-12 * * 1-5 /Users/charlesmarshall/anaconda3/bin/python /Users/charlesmarshall/Desktop/TransMinor/CTA_Project/DataScrapingScript.py
+
+# Cronjob for PM Purple Line Rush 4/23/21
+# * 14-21 * * 1-5 /Users/charlesmarshall/anaconda3/bin/python /Users/charlesmarshall/Desktop/TransMinor/CTA_Project/DataScrapingScript.py
+
+(base) charless-mbp-2:~ charlesmarshall$ mail
+Mail version 8.1 6/6/93.  Type ? for help.
+"/var/mail/charlesmarshall": 2 messages 2 unread
+>U  1 charlesmarshall@char  Mon Apr 26 14:10  36/1870  "Cron <charlesmarshall"
+ U  2 charlesmarshall@char  Mon Apr 26 14:18  54/2907  "Cron <charlesmarshall"
+? n
+Message 1:
+From charlesmarshall@charless-mbp-2.lan  Mon Apr 26 14:10:11 2021
+X-Original-To: charlesmarshall
+Delivered-To: charlesmarshall@charless-mbp-2.lan
+From: charlesmarshall@charless-mbp-2.lan (Cron Daemon)
+To: charlesmarshall@charless-mbp-2.lan
+Subject: Cron <charlesmarshall@charless-mbp-2> /Users/charlesmarshall/anaconda3/bin/python /Users/charlesmarshall/Desktop/TransMinor/CTA_Project/DataScrapingScript.py
+X-Cron-Env: <SHELL=/bin/sh>
+X-Cron-Env: <PATH=/usr/bin:/bin>
+X-Cron-Env: <LOGNAME=charlesmarshall>
+X-Cron-Env: <USER=charlesmarshall>
+Date: Mon, 26 Apr 2021 14:10:01 -0500 (CDT)
+
+--- Logging error ---
+Traceback (most recent call last):
+  File "/Users/charlesmarshall/anaconda3/lib/python3.7/logging/__init__.py", line 1025, in emit
+    msg = self.format(record)
+  File "/Users/charlesmarshall/anaconda3/lib/python3.7/logging/__init__.py", line 869, in format
+    return fmt.format(record)
+  File "/Users/charlesmarshall/anaconda3/lib/python3.7/logging/__init__.py", line 608, in format
+    record.message = record.getMessage()
+  File "/Users/charlesmarshall/anaconda3/lib/python3.7/logging/__init__.py", line 369, in getMessage
+    msg = msg % self.args
+TypeError: not all arguments converted during string formatting
+Call stack:
+  File "/Users/charlesmarshall/Desktop/TransMinor/CTA_Project/DataScrapingScript.py", line 86, in <module>
+    purple_data()
+  File "/Users/charlesmarshall/Desktop/TransMinor/CTA_Project/DataScrapingScript.py", line 74, in purple_data
+    logger.info(train.rn.string,train.nextStaNm.string,train.trDr.string,train.arrT.string)
+Message: '519'
+Arguments: ('Dempster', '1', '20210426 14:10:28')
+
+? n               
+Message 2:
+From charlesmarshall@charless-mbp-2.lan  Mon Apr 26 14:18:01 2021
+X-Original-To: charlesmarshall
+Delivered-To: charlesmarshall@charless-mbp-2.lan
+From: charlesmarshall@charless-mbp-2.lan (Cron Daemon)
+To: charlesmarshall@charless-mbp-2.lan
+Subject: Cron <charlesmarshall@charless-mbp-2> /Users/charlesmarshall/anaconda3/bin/python /Users/charlesmarshall/Desktop/TransMinor/CTA_Project/DataScrapingScript.py
+X-Cron-Env: <SHELL=/bin/sh>
+X-Cron-Env: <PATH=/usr/bin:/bin>
+X-Cron-Env: <LOGNAME=charlesmarshall>
+X-Cron-Env: <USER=charlesmarshall>
+Date: Mon, 26 Apr 2021 14:18:01 -0500 (CDT)
+
+--- Logging error ---
+Traceback (most recent call last):
+  File "/Users/charlesmarshall/anaconda3/lib/python3.7/logging/__init__.py", line 1025, in emit
+    msg = self.format(record)
+  File "/Users/charlesmarshall/anaconda3/lib/python3.7/logging/__init__.py", line 869, in format
+    return fmt.format(record)
+  File "/Users/charlesmarshall/anaconda3/lib/python3.7/logging/__init__.py", line 608, in format
+    record.message = record.getMessage()
+  File "/Users/charlesmarshall/anaconda3/lib/python3.7/logging/__init__.py", line 369, in getMessage
+    msg = msg % self.args
+TypeError: not all arguments converted during string formatting
+Call stack:
+  File "/Users/charlesmarshall/Desktop/TransMinor/CTA_Project/DataScrapingScript.py", line 86, in <module>
+    purple_data()
+  File "/Users/charlesmarshall/Desktop/TransMinor/CTA_Project/DataScrapingScript.py", line 74, in purple_data
+    logger.info(train.rn.string,train.nextStaNm.string,train.trDr.string,train.arrT.string)
+Message: '513'
+Arguments: ('Howard', '5', '20210426 14:18:34')
+--- Logging error ---
+Traceback (most recent call last):
+  File "/Users/charlesmarshall/anaconda3/lib/python3.7/logging/__init__.py", lin  File "/Users/charlesmarshall/anaconda3/lib/python3.7/logging/__init__.py", lin
+e 1025, in emit
+    msg = self.format(record)
+  File "/Users/charlesmarshall/anaconda3/lib/python3.7/logging/__init__.py", line 869, in format
+    return fmt.format(record)
+  File "/Users/charlesmarshall/anaconda3/lib/python3.7/logging/__init__.py", line 608, in format
+    record.message = record.getMessage()
+  File "/Users/charlesmarshall/anaconda3/lib/python3.7/logging/__init__.py", line 369, in getMessage
+    msg = msg % self.args
+TypeError: not all arguments converted during string formatting
+Call stack:
+  File "/Users/charlesmarshall/Desktop/TransMinor/CTA_Project/DataScrapingScript.py", line 86, in <module>
+    purple_data()
+  File "/Users/charlesmarshall/Desktop/TransMinor/CTA_Project/DataScrapingScript.py", line 74, in purple_data
+    logger.info(train.rn.string,train.nextStaNm.string,train.trDr.string,train.arrT.string)
+Message: '518'
+Arguments: ('Main', '1', '20210426 14:18:21')
